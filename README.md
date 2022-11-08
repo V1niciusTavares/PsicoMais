@@ -35,9 +35,9 @@ Follow the instructions here to exec perfect our project :D .
 
 <!-- ## Suporte
 
+- Email : monitoriadigitalsuporte@gmail.com -->
 <!--![alt text](https://media.giphy.com/media/3ov9k0Ziq50EoOuWRi/source.gif "Praise the sun!")  -->
-<img <a
-ijbs-dev 	V1niciusTavares 	Guilherme 	LukeVanHagen 	src= "https://media.giphy.com/media/3ov9k0Ziq50EoOuWRi/source.gif" width="200">
+<img src= "https://media.giphy.com/media/3ov9k0Ziq50EoOuWRi/source.gif" width="200">
 
 ## Team
 
