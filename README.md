@@ -41,7 +41,7 @@ Follow the instructions here to exec perfect our project :D .
 
 ## Team
 
-| <a href="https://github.com/ijbs-dev" target="_blank">Ismael</a> | <a href="https://github.com/V1niciusTavares" target="_blank">Vinicius</a> | <a href="https://github.com/GuilhermeH6" target="_blank">Guilherme</a> | <a href="https://github.com/LukeVanHagen" target="_blank">LukeVanHagen</a> | <a 
+| <a href="https://github.com/ijbs-dev" target="_blank">Ismael</a> | <a href="https://github.com/V1niciusTavares" target="_blank">Vinicius</a> | <a href="https://github.com/GuilhermeH6" target="_blank">Guilherme</a> | <a href="https://github.com/LukeVanHagen" target="_blank">LukeVanHagen</a> 
 | :---: |:---:| :---:| :---:| 
 | [![ijbs-dev](https://avatars0.githubusercontent.com/u/61188485?s=460&v=4)](https://github.com/ijbs-dev)  | [![V1niciusTavares](https://avatars.githubusercontent.com/u/113178429?v=4)](https://github.com/V1niciusTavares) | [![Guilherme](https://avatars.githubusercontent.com/u/47796068?v=4)](https://github.com/GuilhermeH6) | [![LukeVanHagen](https://avatars0.githubusercontent.com/u/72463770?s=460&v=4)](https://github.com/LukeVanHagen) |
 | <a href="https://github.com/ijbs-dev" target="_blank">`github.com/ijbs-dev`</a> | <a href="https://github.com/V1niciusTavares" target="_blank">`github.com/V1niciusTavares`</a> | <a href="https://github.com/GuilhermeH6" target="_blank">`github.com/GuilhermeH6`</a> | <a href="https://github.com/LukeVanHagen" target="_blank">`github.com/LukeVanHagen`</a> | 
