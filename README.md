@@ -15,15 +15,8 @@ Follow the instructions here to exec perfect our project :D .
 - [Team](#Team)
 
 ```diff
-- text in red
-+ Clone
-! text in orange
-# text in gray
-@@ text in purple (and bold)@@
++Clone
 ```
-
-
- 
 - Clone the repository in your computer : ```git clone https://github.com/V1niciusTavares/PsicoMais.git ```
 
 ### Requeriments
