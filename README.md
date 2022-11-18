@@ -17,8 +17,7 @@ Follow the instructions here to exec perfect our project :D .
 ### Requeriments
 
 > You will need Visual Studeo Code.
-
-- Clone the repository in your computer : ```git clone https://github.com/V1niciusTavares/PsicoMais.git ```
+> Clone the repository in your computer : ```git clone https://github.com/V1niciusTavares/PsicoMais.git ```
 
 ### Execution
 
