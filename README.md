@@ -9,13 +9,13 @@
 
 Follow the instructions here to exec perfect our project :D .
 > if u want select one session.
-💻
+
 - [Requeriments](#Requeriments)
 - [Execution](#Execution)
 - [Tools](#Tools)
 - [Team](#Team)
 
-### Requeriments
+### :camera: Requeriments
 
 > You will need Visual Studeo Code.
 
