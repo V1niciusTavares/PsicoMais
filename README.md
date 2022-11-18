@@ -42,7 +42,7 @@ Follow the instructions here to exec perfect our project :D .
 <!--![alt text](https://media.giphy.com/media/3ov9k0Ziq50EoOuWRi/source.gif "Praise the sun!")  -->
 <img src= "https://media.giphy.com/media/3ov9k0Ziq50EoOuWRi/source.gif" width="200">
 
-## Team
+## :tea: Team
 
 | <a href="https://github.com/ijbs-dev" target="_blank">Ismael</a> | <a href="https://github.com/V1niciusTavares" target="_blank">Vinicius</a> | <a href="https://github.com/GuilhermeH6" target="_blank">Guilherme</a> | <a href="https://github.com/LukeVanHagen" target="_blank">Flavio</a> 
 | :---: |:---:| :---:| :---:| 
