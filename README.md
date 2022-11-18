@@ -25,7 +25,7 @@ Follow the instructions here to exec perfect our project :D .
 > Follow these steps in CMD (Windows) or terminal (Linux):
 
 ```
-# npm create vite@latest myapp -- --template svelte
+:folder: npm create vite@latest myapp -- --template svelte
 # cd myapp
 # npm install
 # npm run dev
