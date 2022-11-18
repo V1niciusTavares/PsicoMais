@@ -53,7 +53,7 @@
   
         <br /><br />
         <div class="inputBox">        
-          <label><b>Endereço:</b> {userAdress} /label>
+          <label><b>Endereço:</b> {userAdress} </label>
         </div>
         <br /><br />      
       </fieldset>

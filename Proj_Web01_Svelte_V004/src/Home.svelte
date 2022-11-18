@@ -1,28 +1,36 @@
 <script>
+  import Logged from "./Logged.svelte";
+  import { page, users, currentUser } from "./stores";
 
-import { page } from "./stores";
-
-function changePage(v) {
+  function changePage(v) {
     page.update(() => v);
-}
+  }
 </script>
 
+<main>
+  <h1>HOME</h1>
 
-<h1> HOME </h1>
-
-<button on:click={() => changePage('loginUsuario')}>Login Usuario</button> <br /><br /> 
-<button on:click={() => changePage('registerUsuario')}>Register Usuario</button>  <br /><br /> 
-
-<button on:click={() => changePage('longinProf')}>Login Profissional</button>  <br /><br />
+  {#if !$currentUser}
+    <button on:click={() => changePage("loginUsuario")}>Login Usuario</button>
+    
+    <button on:click={() => changePage("registerUsuario")}
+      >Register Usuario</button> 
+      
+    {:else}
+    <Logged />
+  {/if}
+  <!--
+  <button on:click={() => changePage('longinProf')}>Login Profissional</button>  <br /><br />
 <button on:click={() => changePage('registerProf')}>Register Profissional</button>  <br /><br /> 
 
 <button on:click={() => changePage('loginInst')}>Login Instituição</button>  <br /><br />
 <button on:click={() => changePage('registerInst')}>Register Instituição</button>  <br /><br /> 
 
+-->
+</main>
 
 <style>
-
-body {
+  body {
     font-family: Arial, Helvetica, sans-serif;
     background-image: linear-gradient(
       to right,
@@ -119,18 +127,14 @@ body {
     font-size: 15px;
     cursor: pointer;
     border-radius: 10px;
-}
+  }
 
-button:hover,
-button:active {
-  background-image: linear-gradient(
+  button:hover,
+  button:active {
+    background-image: linear-gradient(
       to right,
       rgb(0, 80, 172),
       rgb(80, 19, 195)
     );
-
-    
-}
-
+  }
 </style>
-

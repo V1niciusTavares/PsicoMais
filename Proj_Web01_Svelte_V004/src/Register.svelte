@@ -35,6 +35,9 @@
           formState = "invalid";
           return;
         }
+        let gender = 'fem'
+        if (mas) gender = 'men'
+        if (other) gender = 'other'
     
         createdUsers = [
           ...createdUsers,
@@ -42,9 +45,7 @@
             name: name,
             e_mail: email,
             phone: telefone,
-            woman: fem,
-            men: mas,
-            outros: other,
+            gender: gender,
             dates: data,
             cidades: city,
             state: estado,
@@ -216,7 +217,7 @@
           userDate={usuario.dates}
           userCity={usuario.cidades}
           userState={usuario.state}
-          userAdress={usuario.endereco}
+          userAdress={usuario.address}
           
         />
         
