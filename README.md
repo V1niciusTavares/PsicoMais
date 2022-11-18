@@ -32,7 +32,7 @@ Follow the instructions here to exec perfect our project :D .
 # npm run dev
 ```
 
-## Tools
+### :hammer_and_wrench: Tools
 
 - After installing, go to [Svelte.dev](https://svelte.dev/).
 
