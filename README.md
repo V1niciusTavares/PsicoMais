@@ -1,7 +1,7 @@
 # PsicoMais
 
 
-## STARTING
+## :hammer:STARTING
 
 Follow the instructions here to exec perfect our project :D .
 > if u want select one session.
