@@ -1,7 +1,6 @@
 # PsicoMais
 
-
-## :hammer:STARTING
+## :hammer: Starting
 
 Follow the instructions here to exec perfect our project :D .
 > if u want select one session.
@@ -38,6 +37,10 @@ Follow the instructions here to exec perfect our project :D .
 - Email : monitoriadigitalsuporte@gmail.com -->
 <!--![alt text](https://media.giphy.com/media/3ov9k0Ziq50EoOuWRi/source.gif "Praise the sun!")  -->
 <img src= "https://media.giphy.com/media/3ov9k0Ziq50EoOuWRi/source.gif" width="200">
+
+<h4 align="center"> 
+    :construction:  Projeto em construção  :construction:
+</h4>
 
 ## Team
 
