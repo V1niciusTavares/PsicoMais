@@ -21,7 +21,7 @@ Follow the instructions here to exec perfect our project :D .
 
 > Clone the repository in your computer : ```git clone https://github.com/V1niciusTavares/PsicoMais.git ```
 
-### Execution
+### :rocket: Execution
 
 > Follow these steps in CMD (Windows) or terminal (Linux):
 
