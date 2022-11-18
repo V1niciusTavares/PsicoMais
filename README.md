@@ -1,7 +1,7 @@
   
-<h4 align="center"> 
+
     ![GitHub top language](https://img.shields.io/github/languages/top/V1niciusTavares/PsicoMais)
-</h4>
+
 # PsicoMais
 
 <h4 align="center"> 
