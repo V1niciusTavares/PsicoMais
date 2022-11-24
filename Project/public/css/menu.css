@@ -1,0 +1,8 @@
+input, button, select, textarea {
+	-webkit-padding: 0.4em 0;
+	padding: 0.0em;
+	margin: 0 0 0.5em 0;
+	box-sizing: border-box;
+	border: 0px solid rgb(244, 13, 13);
+	border-radius: 0px;
+}
