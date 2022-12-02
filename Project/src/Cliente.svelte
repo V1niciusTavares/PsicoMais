@@ -97,8 +97,7 @@
             <div class="input-box">
               <label for="number">Data De Nascimento</label>
               <input
-                type="number"
-                placeholder="Idade"
+                type="date"
                 value={idade}
                 on:input={inputIdade}
               />
@@ -131,7 +130,7 @@
       </div>
     </div>
   
-    <VoltarMenu />
+    
   </main>
   
   <style>
