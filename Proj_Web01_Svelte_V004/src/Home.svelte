@@ -8,6 +8,7 @@
 </script>
 
 <main>
+  <td>entrar</td><td>sair</td><td>Info</td>
   <h1>HOME</h1>
 
   {#if !$currentUser}
