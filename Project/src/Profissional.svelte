@@ -1,23 +1,25 @@
 <script>
     import VoltarMenu from "./VoltarMenu.svelte";
   
-    let nome = "";
-    let email = "";
-    let telefone = "";
-    let idade = "";
-    let cpf = "";
-    let endereco = "";
+    let pro_nome = "";
+    let pro_email = "";
+    let pro_senha = "";
+    let pro_telefone = "";
+    let pro_idade = "";
+    let pro_cpf = "";
+    let pro_endereco = "";
   
     async function onSubmit(event) {
       event.preventDefault();
   
       const data = new FormData();
-      data.append("nome", nome);
-      data.append("email", email);
-      data.append("telefone", telefone);
-      data.append("idade", idade);
-      data.append("cpf", cpf);
-      data.append("endereco", endereco);
+      data.append("nome", pro_nome);
+      data.append("email", pro_email);
+      data.append("senha", pro_senha);
+      data.append("telefone", pro_telefone);
+      data.append("idade", pro_idade);
+      data.append("cpf", pro_cpf);
+      data.append("endereco", pro_endereco);
   
       try {
         const result = await fetch("http://localhost:8000/", {
@@ -32,22 +34,25 @@
     }
   
     function inputNome(event) {
-      nome = event.target.value;
+      pro_nome = event.target.value;
     }
     function inputEmail(event) {
-      email = event.target.value;
+      pro_email = event.target.value;
+    }
+    function inputSenha(event) {
+      pro_senha = event.target.value;
     }
     function inputTelefone(event) {
-      telefone = event.target.value;
+      pro_telefone = event.target.value;
     }
     function inputIdade(event) {
-      idade = event.target.value;
+      pro_idade = event.target.value;
     }
     function inputCpf(event) {
-      cpf = event.target.value;
+      pro_cpf = event.target.value;
     }
     function inputEndereco(event) {
-      endereco = event.target.value;
+      pro_endereco = event.target.value;
     }
   </script>
   
@@ -70,7 +75,7 @@
               <input
                 type="text"
                 placeholder="Nome"
-                value={nome}
+                value={pro_nome}
                 on:input={inputNome}
               />
             </div>
@@ -80,16 +85,28 @@
               <input
                 type="text"
                 placeholder="E-mail"
-                value={email}
+                value={pro_email}
                 on:input={inputEmail}
               />
             </div>
+
+            <div class="input-group">
+              <div class="input-box">
+                <label for="senha">Senha</label>
+                <input
+                  type="password"
+                  placeholder="Nome"
+                  value={pro_senha}
+                  on:input={inputSenha}
+                />
+              </div>
+
             <div class="input-box">
               <label for="email">Telefone</label>
               <input
                 type="text"
                 placeholder="Telefone"
-                value={telefone}
+                value={pro_telefone}
                 on:input={inputTelefone}
               />
             </div>
@@ -97,8 +114,8 @@
             <div class="input-box">
               <label for="number">Data De Nascimento</label>
               <input
-                type="date"
-                value={idade}
+                type="number"
+                value={pro_idade}
                 on:input={inputIdade}
               />
             </div>
@@ -108,7 +125,7 @@
               <input
                 type="number"
                 placeholder="CPF"
-                value={cpf}
+                value={pro_cpf}
                 on:input={inputCpf}
               />
             </div>
@@ -118,7 +135,7 @@
               <input
                 type="text"
                 placeholder="Endereço"
-                value={endereco}
+                value={pro_endereco}
                 on:input={inputEndereco}
               />
             </div>

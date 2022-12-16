@@ -3,6 +3,7 @@
   
     let nome = "";
     let email = "";
+    let senha = "";
     let telefone = "";
     let idade = "";
     let cpf = "";
@@ -14,6 +15,7 @@
       const data = new FormData();
       data.append("nome", nome);
       data.append("email", email);
+      data.append("senha", senha);
       data.append("telefone", telefone);
       data.append("idade", idade);
       data.append("cpf", cpf);
@@ -31,23 +33,26 @@
       }
     }
   
-    function inputNome(event) {
-      nome = event.target.value;
+    function inputNome(e) {
+      nome = e.target.value;
     }
-    function inputEmail(event) {
-      email = event.target.value;
+    function inputEmail(e) {
+      email = e.target.value;
     }
-    function inputTelefone(event) {
-      telefone = event.target.value;
+    function inputSenha(e) {
+      senha = e.target.value;
     }
-    function inputIdade(event) {
-      idade = event.target.value;
+    function inputTelefone(e) {
+      telefone = e.target.value;
     }
-    function inputCpf(event) {
-      cpf = event.target.value;
+    function inputIdade(e) {
+      idade = e.target.value;
     }
-    function inputEndereco(event) {
-      endereco = event.target.value;
+    function inputCpf(e) {
+      cpf = e.target.value;
+    }
+    function inputEndereco(e) {
+      endereco = e.target.value;
     }
   </script>
   
@@ -66,7 +71,7 @@
   
           <div class="input-group">
             <div class="input-box">
-              <label for="firstname">Nome</label>
+              <label for="nome">Nome</label>
               <input
                 type="text"
                 placeholder="Nome"
@@ -76,7 +81,7 @@
             </div>
   
             <div class="input-box">
-              <label for="lastname">E-mail</label>
+              <label for="email">E-mail</label>
               <input
                 type="text"
                 placeholder="E-mail"
@@ -85,7 +90,16 @@
               />
             </div>
             <div class="input-box">
-              <label for="email">Telefone</label>
+              <label for="senha">Senha</label>
+              <input
+                type="password"
+                placeholder="senha"
+                value={senha}
+                on:input={inputSenha}
+              />
+            </div>
+            <div class="input-box">
+              <label for="telefone">Telefone</label>
               <input
                 type="text"
                 placeholder="Telefone"
@@ -97,14 +111,14 @@
             <div class="input-box">
               <label for="number">Data De Nascimento</label>
               <input
-                type="date"
+                type="number"
                 value={idade}
                 on:input={inputIdade}
               />
             </div>
   
             <div class="input-box">
-              <label for="password">CPF</label>
+              <label for="cpf">CPF</label>
               <input
                 type="number"
                 placeholder="CPF"
@@ -114,7 +128,7 @@
             </div>
   
             <div class="input-box">
-              <label for="confirmPassword">Endereço</label>
+              <label for="endereco">Endereço</label>
               <input
                 type="text"
                 placeholder="Endereço"
