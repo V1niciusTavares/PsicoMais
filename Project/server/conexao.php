@@ -7,7 +7,7 @@ class Pessoa
     public function __construct($dbname, $host, $user, $senha)
     {
         try {
-            $this->pdo = new PDO("mysql:port=5609;dbname=" . $dbname . ";host=" . $host, $user, $senha);
+            $this->pdo = new PDO("mysql:port=7114;dbname=" . $dbname . ";host=" . $host, $user, $senha);
         } catch (PDOException $e) {
             echo "erro com banco de dados: " . $e->getMessage();
             exit();
@@ -26,23 +26,24 @@ class Pessoa
         return $res;
     }
 
-    public function casdastrarPessoa($nome, $email, $telefone, $idade, $cpf, $endereco)
+    public function casdastrarPessoa($nome, $email, $senha, $telefone, $idade, $cpf, $endereco)
     {
-
-        $cmd = $this->pdo->prepare("SELECT id from cliente WHERE
-        email = :e");
+        print_r($endereco);
+        print_r($nome);
+        $cmd = $this->pdo->prepare("SELECT id from cliente WHERE email = :e");
         $cmd->bindValue(":e", $email);
         $cmd->execute();
         if ($cmd->rowCount() > 0) {
             return false;
         } else {
-            $cmd = $this->pdo->prepare("INSERT INTO cliente (nome, email, telefone, idade, cpf, endereco) VALUES (:n, :e, :t, :i, :c, :en)");
+            $cmd = $this->pdo->prepare("INSERT INTO cliente (nome, email, senha, telefone, idade, cpf, endereco) VALUES (:n, :e, :s, :t, :i, :c, :o)");
             $cmd->bindValue(":n", $nome);
             $cmd->bindValue(":e", $email);
+            $cmd->bindValue(":s", $senha);
             $cmd->bindValue(":t", $telefone);
             $cmd->bindValue(":i", $idade);
             $cmd->bindValue(":c", $cpf);
-            $cmd->bindValue(":en", $endereco);
+            $cmd->bindValue(":o", $endereco);
             $cmd->execute();
             return true;
         }
@@ -58,7 +59,6 @@ class Pessoa
 
     public function buscarDadosPessoa($id)
     {
-
         $res = array();
         $cmd = $this->pdo->prepare("SELECT * FROM cliente WHERE id = :id");
         $cmd->bindValue(":id", $id);
@@ -77,4 +77,27 @@ class Pessoa
     //     $cmd->bindValue(":id", $id);
     //     $cmd->execute();
     // }
+    public function casdastrarProfissional($pro_nome, $pro_email, $pro_senha, $pro_telefone, $pro_idade, $pro_cpf, $pro_endereco)
+{
+
+    $cmd = $this->pdo->prepare("SELECT pro_id from profissional WHERE
+    pro_email = :b");
+    $cmd->bindValue(":b", $pro_email);
+    $cmd->execute();
+    if ($cmd->rowCount() > 0) {
+        return false;
+    } else {
+        $cmd = $this->pdo->prepare("INSERT INTO profissional (pro_nome, pro_email, pro_senha, pro_telefone, pro_idade, pro_cpf, pro_endereco) VALUES (:a, :b, :z, :f, :u, :l, :p)");
+        $cmd->bindValue(":a", $pro_nome);
+        $cmd->bindValue(":b", $pro_email);
+        $cmd->bindValue(":z", $pro_senha);
+        $cmd->bindValue(":f", $pro_telefone);
+        $cmd->bindValue(":u", $pro_idade);
+        $cmd->bindValue(":l", $pro_cpf);
+        $cmd->bindValue(":p", $pro_endereco);
+        $cmd->execute();
+        return true;
+    }
 }
+}
+
