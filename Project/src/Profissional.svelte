@@ -1,5 +1,5 @@
 <script>
-    import VoltarMenu from "./VoltarMenu.svelte";
+    	import { TrocarEstadoPag} from './Estado.js'
   
     let pro_nome = "";
     let pro_email = "";
@@ -55,7 +55,7 @@
       pro_endereco = event.target.value;
     }
   </script>
-  
+  <a class='logo'  on:click={() => TrocarEstadoPag('menu')}>Psico+</a> 
   <main>
     <div class="container">
       <div class="form-image">
@@ -151,6 +151,14 @@
   </main>
   
   <style>
+
+.logo {
+		cursor: pointer;
+		font-size: 24px;
+		text-transform: uppercase;
+		letter-spacing: 4px;
+	}
+
     @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600&display=swap");
     * {
       padding: 0;
