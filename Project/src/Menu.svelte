@@ -28,7 +28,13 @@
       
     </header>
     <main>
-   
+		<div class="texto">
+			<h2> Seja bem vindo ao Psico+ !! </h2>
+			
+		</div>
+		<div class="img">
+			<img src="images/if.png"  alt="projeta"/>
+		</div>
     </main>
 </body>
 
@@ -37,10 +43,26 @@
 		margin: 0;
 		padding: 0;
 	}
+	.texto {
+		color:rgb(0, 0, 0);
+		text-decoration: none;
+		transition: 0.3s;
+		list-style: none;
+		font-family: system-ui,-apple-system,Helvetica,Arial,sans-serif;
+		height: 8vh ;
+		display: flex;
+		justify-content:center;
+     	
+    }
+	.img {
+		display: flex;
+		justify-content: center;
+	}
 	a{
 		color:#fff;
 		text-decoration: none;
 		transition: 0.3s;
+		
 	}
 	.menu {
 		cursor: pointer;

@@ -80,5 +80,8 @@ main {
     .mobile-menu {
         display: block;
     }
+    .texto {
+        color: #fff;
+    }
     
 }
