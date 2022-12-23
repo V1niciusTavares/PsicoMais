@@ -72,7 +72,6 @@
 			<div class="line3"></div>
 		</div>
         <ul class="nav-list">
-			<li><div class='menu'  on:click={() => TrocarEstadoPag('menu')}>Inicio</li>
         
 			<li><div class='menu'  on:click={() => TrocarEstadoPag('LoginCliente')}>Cliente</li>
 

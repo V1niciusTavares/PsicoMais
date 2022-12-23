@@ -20,9 +20,13 @@
 		</div>
         <ul class="nav-list">
 			
-			<li><div class='menu'  on:click={() => TrocarEstadoPag('LoginInstituicao')}>Instituição</li>
+            <li><div class='menu'  on:click={() => TrocarEstadoPag('LoginCliente')}>Cliente</li>
 
-			<li><div class='menu'  on:click={() => TrocarEstadoPag('LoginProfissional')}>Profissional</li>
+            <li><div class='menu'  on:click={() => TrocarEstadoPag('LoginProfissional')}>Profissional</li>
+
+			
+
+			
 
              
 				
@@ -55,7 +59,7 @@
        <div class="letras">
        
         </div>
-        <a class='but'  on:click={() => TrocarEstadoPag('cliente')}>Registre-se Aqui</a> 
+        <a class='but'  on:click={() => TrocarEstadoPag('cliente')}></a> 
     </div>
     </main>
 </body>
