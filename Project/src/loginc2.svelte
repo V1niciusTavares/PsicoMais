@@ -1,3 +1,7 @@
+<svelte:head>
+	<link rel="stylesheet" href="css/menu.css">
+</svelte:head>
+
 <head>
     <meta charset="UTF-8">
    <link rel="stylesheet" href="css/..css"
