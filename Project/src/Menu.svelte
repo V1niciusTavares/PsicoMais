@@ -18,12 +18,12 @@
 			<div class="line3"></div>
 		</div>
         <ul class="nav-list">
-			<li><div class='menu'  on:click={() => TrocarEstadoPag('menu')}>Inicio</li>
-        
-			<li><div class='menu'  on:click={() => TrocarEstadoPag('cliente')}>Cliente</li>
+			
+			<li><div class='menu'  on:click={() => TrocarEstadoPag('LoginCliente')}>Cliente</li>
 
-			<li><div class='menu'  on:click={() => TrocarEstadoPag('profissional')}>Profissional</li>
-        </ul> 
+			<li><div class='menu'  on:click={() => TrocarEstadoPag('LoginProfissional')}>Profissional</li>
+				
+        </ul>  
       </nav>
       
     </header>
