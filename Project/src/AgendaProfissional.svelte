@@ -19,9 +19,9 @@
 		</div>
         <ul class="nav-list">
 			
-			<li><div class='menu'  on:click={() => TrocarEstadoPag('AgendaProfissional')}>Agenda</li>
+			<li><div class='menu'  on:click={() => TrocarEstadoPag('LoginCliente')}>Cliente</li>
 
-			
+			<li><div class='menu'  on:click={() => TrocarEstadoPag('LoginProfissional')}>Profissional</li>
 
 				
 				
@@ -30,6 +30,6 @@
       
     </header>
     <main>
-		<h1>Aqui será home PROF</h1>
+		<h1>Aqui será Agenda Profissional</h1>
     </main>
 </body>

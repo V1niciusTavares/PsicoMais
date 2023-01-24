@@ -37,7 +37,7 @@
 			
 		</div>
 		<div class="img">
-			<img src="images/if.png"  alt="projeta"/>
+			<img src="images/logo.png"  alt="logo"/>
 		</div>
     </main>
 </body>
@@ -53,15 +53,16 @@
 		transition: 0.3s;
 		list-style: none;
 		font-family: system-ui,-apple-system,Helvetica,Arial,sans-serif;
-		height: 8vh ;
+		padding-top: 3%;
 		display: flex;
 		justify-content:center;
      	
-    }
+    	}
 	.img {
 		display: flex;
 		justify-content: center;
-	}
+		padding-top: 5%;
+		}
 	a{
 		color:#fff;
 		text-decoration: none;

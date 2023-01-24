@@ -136,7 +136,7 @@
               <div class="input-box">
                 <label for="number">Data De Nascimento</label>
                 <input
-                  type="number"
+                  type="date"
                   value={idade}
                   on:input={inputIdade}
                 />
@@ -145,7 +145,7 @@
               <div class="input-box">
                 <label for="cpf">CPF</label>
                 <input
-                  type="number"
+                  type="text"
                   placeholder="CPF"
                   value={cpf}
                   on:input={inputCpf}

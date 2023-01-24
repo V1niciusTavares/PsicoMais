@@ -121,10 +121,19 @@ align-items: center;
     font-weight: 50;
     display: flex;
     align-items: center;
-    
+   
   
 }
-
+.but {
+    color:#30307e;
+    text-decoration: none;
+    font-size: 1.0rem;
+    font-weight: 50;
+    display: flex;
+    justify-content:center;
+    padding: 3rem;
+    cursor: pointer;
+}
 .form-image {
   width: 30%;
   display: flex;

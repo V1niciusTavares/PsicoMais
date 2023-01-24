@@ -19,9 +19,9 @@
 		</div>
         <ul class="nav-list">
 			
-			<li><div class='menu'  on:click={() => TrocarEstadoPag('LoginCliente')}>Cliente</li>
+			
 
-			<li><div class='menu'  on:click={() => TrocarEstadoPag('LoginProfissional')}>Profissional</li>
+			<li><div class='menu'  on:click={() => TrocarEstadoPag('profissional')}>Cadastrar Profissional</li>
 
 				
 				
