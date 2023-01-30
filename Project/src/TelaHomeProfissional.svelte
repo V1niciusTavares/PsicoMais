@@ -30,6 +30,44 @@
       
     </header>
     <main>
-		<h1>Aqui será home PROF</h1>
-    </main>
+
+      <div class="head1">
+  
+        <h1>PsicoMais Sua Saúde </h1>
+        <h1>Acima de tudo</h1>
+  
+      </div>
+      
+       <div class="ft2"> <img src="/images/ft2.png" alt="" /> </div>
+      </main>
+
 </body>
+
+<style>
+
+	.head1 {
+	display: flex;
+	justify-content: center;
+    align-items: center;
+	flex-direction: column;
+	padding-top: 3%;
+	}
+
+	.ft2 {
+	display: flex;
+	justify-content: center;
+    align-items: center;
+	padding-top: 6%;
+	}
+
+img {
+
+	width: 280px;
+	height: 500px;
+	
+	
+}
+
+
+
+</style>

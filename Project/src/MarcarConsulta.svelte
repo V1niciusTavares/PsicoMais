@@ -6,21 +6,23 @@
     
     import { TrocarEstadoPag} from './Estado.js'
   
-    let nome = "";
+    let horarioinicio = "";
+    let horariofim = "";
     let dataconsulta = "";
-    let telefone = "";
+    let especializacao = "";
     let cpf = "";
-    let namepro = "";
+    let nomeprof = "";
   
     async function onSubmit(event) {
       event.preventDefault();
   
       const data = new FormData();
-      data.append("nome", nome);
-      data.append("telefone", telefone);
-      data.append("cpf", cpf);
-      data.append("namepro", namepro);
-      data.append("dataconsulta", dataconsulta);
+      data.append("Cpf", cpf);
+      data.append("HorarioInicio", horarioinicio);
+      data.append("HorarioFim", horariofim);
+      data.append("Especializacao", especializacao);
+      data.append("DataConsulta", dataconsulta);
+      data.append("NomeProf", nomeprof);
       
   
       try {
@@ -35,11 +37,14 @@
       }
     }
   
-    function inputNome(e) {
+    function inputHorarioInicio(e) {
+      nome = e.target.value;
+    }
+    function inputHorarioFim(e) {
       nome = e.target.value;
     }
     
-    function inputTelefone(e) {
+    function inputEspecializacao(e) {
       telefone = e.target.value;
     }
     function inputDataConsulta(e) {
@@ -90,37 +95,55 @@
       
               <div class="input-group">
                 <div class="input-box">
-                  <label for="nome">Nome</label>
+                  <label for="Cpf">CPF</label>
                   <input
                     type="text"
-                    placeholder="Nome"
-                    value={nome}
-                    on:input={inputNome}
+                    placeholder="CPF"
+                    value={cpf}
+                    on:input={inputCpf}
+                  />
+                </div>
+
+                <div class="input-box">
+                  <label for="HorarioInicio">Horário de Início</label>
+                  <input
+                    type="time"
+                    value={horarioinicio}
+                    on:input={inputHorarioInicio}
+                  />
+                </div>
+
+                <div class="input-box">
+                  <label for="HorarioFim">Horário de Termino</label>
+                  <input
+                    type="time"
+                    value={horariofim}
+                    on:input={inputHorarioFim}
                   />
                 </div>
       
                 <div class="input-box">
-                  <label for="email">Escolher Profissional</label>
+                  <label for="NomeProf">Escolher Profissional</label>
                   <input
                     type="text"
-                    placeholder="Nome Profissional"
-                    value={namepro}
+                    placeholder="Escolha o Profissional"
+                    value={nomeprof}
                     on:input={inputNamePro}
                   />
                 </div>
                 
                 <div class="input-box">
-                  <label for="telefone">Telefone</label>
+                  <label for="Especializacao">Escolher Especialização do Profissional</label>
                   <input
                     type="text"
-                    placeholder="Telefone"
-                    value={telefone}
-                    on:input={inputTelefone}
+                    placeholder="Especialização do Profissional"
+                    value={especializacao}
+                    on:input={inputEspecializacao}
                   />
                 </div>
       
                 <div class="input-box">
-                  <label for="number">Data da Consulta</label>
+                  <label for="DataConsulta">Data da Consulta</label>
                   <input
                     type="date"
                     value={dataconsulta}
@@ -128,15 +151,7 @@
                   />
                 </div>
       
-                <div class="input-box">
-                  <label for="cpf">CPF</label>
-                  <input
-                    type="number"
-                    placeholder="CPF"
-                    value={cpf}
-                    on:input={inputCpf}
-                  />
-                </div>
+               
       
                 
               </div>
@@ -262,6 +277,8 @@ body {
   padding: 0.62rem;
   border-radius: 5px;
   cursor: pointer;
+  position: relative;
+  bottom:30px;
 }
 
 .continue-button button:hover {
