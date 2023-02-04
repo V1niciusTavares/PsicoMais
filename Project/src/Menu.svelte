@@ -22,6 +22,10 @@
 			<li><div class='menu'  on:click={() => TrocarEstadoPag('LoginCliente')}>Cliente</li>
 
 			<li><div class='menu'  on:click={() => TrocarEstadoPag('LoginProfissional')}>Profissional</li>
+
+			<li><div class='menu'  on:click={() => TrocarEstadoPag('LoginInstituicao')}>Instituição</li>
+
+			
 				
         </ul>  
       </nav>
@@ -29,35 +33,41 @@
     </header>
     <main>
 		<div class="texto">
-			<h2> Seja bem vindo ao Psico+ !! </h2>
+			<h2> Seja bem vindo ao Psico+!! </h2>
 			
 		</div>
 		<div class="img">
-			<img src="images/if.png"  alt="projeta"/>
+			<img src="images/logo.png"  alt="logo"/>
 		</div>
     </main>
 </body>
 
 <style>
 	*{
-		margin: 0;
-		padding: 0;
+		margin:0px;
+		padding:0px;
 	}
+
+body{
+	margin-top:-27px;
+
+}
 	.texto {
 		color:rgb(0, 0, 0);
 		text-decoration: none;
 		transition: 0.3s;
 		list-style: none;
 		font-family: system-ui,-apple-system,Helvetica,Arial,sans-serif;
-		height: 8vh ;
+		padding-top: 3%;
 		display: flex;
 		justify-content:center;
      	
-    }
+    	}
 	.img {
 		display: flex;
 		justify-content: center;
-	}
+		padding-top: 5%;
+		}
 	a{
 		color:#fff;
 		text-decoration: none;
@@ -66,11 +76,18 @@
 	}
 	.menu {
 		cursor: pointer;
-		color:#fff;
+		color:#ffffff;
 		text-decoration: none;
 		transition: 0.3s;
 		
 	}
+	.menu:hover{
+		text-decoration: underline;
+		background-color:#191A61;
+		border-radius: 5px;
+		padding:5px;
+	}
+
 	a:hover {
 		opacity:0.7;
 	}
@@ -85,11 +102,16 @@
 		justify-content: space-around;
 		align-items: center ;
 		font-family: system-ui,-apple-system,Helvetica,Arial,sans-serif;
-		background: #23232e;
+		background-image: linear-gradient(to bottom,#2C2FAB,#4c4ca0);
 		height: 8vh ;
+		border-radius: 5px;
+		font-weight: bold;
+		padding:10px;
+		margin-top: 20px;
+
 	}
 	main {
-		background:#30307e no-repeat 
+		background:#1961AD no-repeat 
 		center center ;
 		background-size: cover;
 		height: 92vh;
@@ -117,6 +139,7 @@
 	@media (max-width:999px) {
 		body {
 			overflow-x: hidden;
+			background-color: white;
 		}
 		.nav-list {
 			position: absolute;
