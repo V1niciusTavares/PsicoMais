@@ -171,7 +171,7 @@
 
 
 body {
-      background:#30307e no-repeat 
+      background:white no-repeat 
     center center ;
     
     }
